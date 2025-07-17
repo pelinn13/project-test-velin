@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suitmedia</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:," />
+  </head>
+  <body>
+    <header id="site-header">
+      <div class="logo">
+        <a href="/">
+          <img src="assets/logo.png" alt="Suitmedia Logo" />
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#" class="active">Ideas</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="parallax-image"></div>
+        <div class="hero-text">
+          <h1>Ideas</h1>
+          <p>Where all our great things begin</p>
+        </div>
+      </section>
+
+      <section class="filter">
+        <div class="filter-info">
+          <p id="status">Showing 1 - 10 of ...</p>
+        </div>
+        <div class="filter-options">
+          <label for="items-per-page">Show per page:</label>
+          <select id="items-per-page">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+          </select>
+          <label for="sort-by">Sort by:</label>
+          <select id="sort-by">
+            <option value="newest" selected>Newest</option>
+            <option value="oldest">Oldest</option>
+          </select>
+        </div>
+      </section>
+
+      <section id="ideas-grid" class="ideas-grid">
+        <!-- Cards will be inserted here by JS -->
+      </section>
+
+      <div class="pagination" id="pagination">
+        <!-- Pagination buttons inserted here by JS -->
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Suitmedia. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
